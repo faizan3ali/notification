@@ -5,9 +5,9 @@ const connectDB = async () => {
       // "mongodb+srv://root:" +
       // process.env.MONGO_ATLAS_PASS +
       // "@docdb-2022-02-17-21-16-45.cluster-c6uvus96jlgd.eu-central-1.docdb.amazonaws.com:27017/?ssl=true&ssl_ca_certs=rds-combined-ca-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false";
-    
 
-      const conn = await mongoose.connect(`mongodb://localhost:27017/local_nuavto`, {
+
+      const conn = await mongoose.connect(`mongodb://admin:admin1234@localhost:27017/admin`, {
         useNewUrlParser: true,
       });
       console.log(`MongoDB Connected:` ,conn.connection.host);
